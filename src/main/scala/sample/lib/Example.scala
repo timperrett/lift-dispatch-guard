@@ -3,7 +3,7 @@ package sample.lib
 import net.liftweb.http.rest.RestHelper
 import net.liftweb.http.{SessionVar,OkResponse,PlainTextResponse}
 
-object Example extends RestHelper { 
+object Service extends RestHelper { 
   serve {
     case "protected" :: Nil Get _ => 
       PlainTextResponse("Ohh, secret")
